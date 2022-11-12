@@ -5,36 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
     <title>Dead Void</title>
     <style>
+        @font-face {
+            font-family: "UniSansHeavyCaps";
+            src:url('./8519.woff') format('woff');
+        }
         html {
             scroll-behavior: smooth;
+            box-sizing: border-box;
         }
         body {
             margin:0;
             padding:0;
             height:200vh;
             background-color:#333;
+            font-size:min(30px,1.5em);
         }
         #header {
             background-color: #080208;
             border:2px solid;
-            width:100vw;
-            height:50px;
+            width:100%;
+            height:2em;
             display: flex;
             justify-content: space-between;
             align-items:center;
-            font-size:1.5em;
-            padding:5px;
+            padding:2%;
             margin-bottom:30px;
             box-sizing: border-box;
+            font-size:min(30px,1.5em);
         }
         #title {
             color:#FFF;
+            font-family: "UniSansHeavyCaps";
         }
         #dwn {
             color:#000;
             background-color:#FFF;
             border-radius:10px;
             padding:5px;
+            font-family: "UniSansHeavyCaps";
         }
         a {
             color:#FFF;
@@ -42,7 +50,7 @@
         .content {
             color:#fff;
             margin:5%;
-            padding:5%;
+            padding:1em;
             background-color:#222;
             border-radius:10px;
         }
@@ -54,7 +62,7 @@
 <body>
 <div id="header">
     <span id="title">Dead Void</span>
-    <a id="dwn" href="#">Download</a>
+    <a id="dwn" href="#download-section">Download</a>
 </div>
 <div class="content" id="description">
 A story about friends who got into the dungeons. The main character will try to find a way out and his friends. In different endings, parts of the plot and different mini-games 
@@ -62,20 +70,22 @@ A story about friends who got into the dungeons. The main character will try to 
 <div class="content">
     <img src="https://m.gjcdn.net/game-screenshot/600/18336103-k66fqtmi-v4.webp" alt="template">
 </div>
-<div class="content">
-    <a href="https://gamejolt.com/games/deathvoid/763561">Official Gamejolt page</a>
-</div>
-<div class="content">
-    <a href="#">Cheems's optimised cut (Windows)</a>
-    [soon]
-</div>
-<div class="content">
-    <a href="#">Cheems's optimised cut (Android)</a>
-    [soon]
-</div>
-<div class="content">
-    <a href="#">Cheems's Re:Sprite mod</a>
-    [soon]
+<div id="download-section">
+    <div class="content">
+        <a href="https://gamejolt.com/games/deathvoid/763561">Official Gamejolt page</a>
+    </div>
+    <div class="content">
+        <a href="#">Cheems's optimised cut (Windows)</a>
+        [soon]
+    </div>
+    <div class="content">
+        <a href="#">Cheems's optimised cut (Android)</a>
+        [soon]
+    </div>
+    <div class="content">
+        <a href="#">Cheems's Re:Sprite mod</a>
+        [soon]
+    </div>
 </div>
 </body>
 </html>
